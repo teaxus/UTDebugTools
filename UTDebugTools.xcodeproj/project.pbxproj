@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2CB9C9291D9118F0AC2ABD /* Pods_UTDebugTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDF351F9846E2106E231304 /* Pods_UTDebugTools.framework */; };
 		7D9ADA08244BE8440010B8CC /* UTDebugTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9ADA06244BE8440010B8CC /* UTDebugTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D9ADA11244BEA5F0010B8CC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ADA10244BEA5F0010B8CC /* UIViewController+Extension.swift */; };
+		7D9ADA13244BEAAD0010B8CC /* UTDebugeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ADA12244BEAAD0010B8CC /* UTDebugeTools.swift */; };
+		7D9ADA15244BEACA0010B8CC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7D9ADA14244BEACA0010B8CC /* Podfile */; };
+		7D9ADA18244BEB9D0010B8CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9ADA17244BEB9D0010B8CC /* AudioToolbox.framework */; };
+		7D9ADA1A244BECB40010B8CC /* UTDebugUISetupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ADA19244BECB40010B8CC /* UTDebugUISetupHelper.swift */; };
+		7D9ADA27244BF01F0010B8CC /* UTDebugTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BBACEB8B81B00E21D47DD24 /* Pods-UTDebugTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTDebugTools.release.xcconfig"; path = "Target Support Files/Pods-UTDebugTools/Pods-UTDebugTools.release.xcconfig"; sourceTree = "<group>"; };
 		7D9ADA03244BE8440010B8CC /* UTDebugTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTDebugTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9ADA06244BE8440010B8CC /* UTDebugTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTDebugTools.h; sourceTree = "<group>"; };
 		7D9ADA07244BE8440010B8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D9ADA10244BEA5F0010B8CC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		7D9ADA12244BEAAD0010B8CC /* UTDebugeTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTDebugeTools.swift; sourceTree = "<group>"; };
+		7D9ADA14244BEACA0010B8CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D9ADA17244BEB9D0010B8CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		7D9ADA19244BECB40010B8CC /* UTDebugUISetupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTDebugUISetupHelper.swift; sourceTree = "<group>"; };
+		7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = UTDebugTools.podspec; sourceTree = SOURCE_ROOT; };
+		ACDF351F9846E2106E231304 /* Pods_UTDebugTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTDebugTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C140CAB2FEF1DD1EBDB91340 /* Pods-UTDebugTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTDebugTools.debug.xcconfig"; path = "Target Support Files/Pods-UTDebugTools/Pods-UTDebugTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9ADA18244BEB9D0010B8CC /* AudioToolbox.framework in Frameworks */,
+				7C2CB9C9291D9118F0AC2ABD /* Pods_UTDebugTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +50,8 @@
 			children = (
 				7D9ADA05244BE8440010B8CC /* UTDebugTools */,
 				7D9ADA04244BE8440010B8CC /* Products */,
+				7D9ADA16244BEB9D0010B8CC /* Frameworks */,
+				860BC1D2941C310189D2E8DA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +66,41 @@
 		7D9ADA05244BE8440010B8CC /* UTDebugTools */ = {
 			isa = PBXGroup;
 			children = (
+				7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */,
+				7D9ADA14244BEACA0010B8CC /* Podfile */,
+				7D9ADA0F244BEA360010B8CC /* src */,
 				7D9ADA06244BE8440010B8CC /* UTDebugTools.h */,
 				7D9ADA07244BE8440010B8CC /* Info.plist */,
 			);
 			path = UTDebugTools;
+			sourceTree = "<group>";
+		};
+		7D9ADA0F244BEA360010B8CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7D9ADA10244BEA5F0010B8CC /* UIViewController+Extension.swift */,
+				7D9ADA12244BEAAD0010B8CC /* UTDebugeTools.swift */,
+				7D9ADA19244BECB40010B8CC /* UTDebugUISetupHelper.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7D9ADA16244BEB9D0010B8CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D9ADA17244BEB9D0010B8CC /* AudioToolbox.framework */,
+				ACDF351F9846E2106E231304 /* Pods_UTDebugTools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		860BC1D2941C310189D2E8DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C140CAB2FEF1DD1EBDB91340 /* Pods-UTDebugTools.debug.xcconfig */,
+				1BBACEB8B81B00E21D47DD24 /* Pods-UTDebugTools.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D9ADA0B244BE8440010B8CC /* Build configuration list for PBXNativeTarget "UTDebugTools" */;
 			buildPhases = (
+				3FDEB4ED45C5098BB8BCE563 /* [CP] Check Pods Manifest.lock */,
 				7D9AD9FE244BE8440010B8CC /* Headers */,
 				7D9AD9FF244BE8440010B8CC /* Sources */,
 				7D9ADA00244BE8440010B8CC /* Frameworks */,
@@ -95,6 +147,7 @@
 				TargetAttributes = {
 					7D9ADA02244BE8440010B8CC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -121,16 +174,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9ADA15244BEACA0010B8CC /* Podfile in Resources */,
+				7D9ADA27244BF01F0010B8CC /* UTDebugTools.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FDEB4ED45C5098BB8BCE563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UTDebugTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D9AD9FF244BE8440010B8CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9ADA13244BEAAD0010B8CC /* UTDebugeTools.swift in Sources */,
+				7D9ADA1A244BECB40010B8CC /* UTDebugUISetupHelper.swift in Sources */,
+				7D9ADA11244BEA5F0010B8CC /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +342,9 @@
 		};
 		7D9ADA0C244BE8440010B8CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C140CAB2FEF1DD1EBDB91340 /* Pods-UTDebugTools.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AVV48W47TG;
@@ -268,6 +353,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UTDebugTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +362,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.utai.UTDebugTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +371,9 @@
 		};
 		7D9ADA0D244BE8440010B8CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBACEB8B81B00E21D47DD24 /* Pods-UTDebugTools.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AVV48W47TG;
@@ -292,6 +382,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UTDebugTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.utai.UTDebugTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
