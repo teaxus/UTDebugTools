@@ -1,0 +1,7 @@
+framework module UTDebugTools {
+  umbrella header "UTDebugTools.h"
+
+  export *
+  module * { export * }
+}
+

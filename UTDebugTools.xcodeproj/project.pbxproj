@@ -15,6 +15,7 @@
 		7D9ADA18244BEB9D0010B8CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9ADA17244BEB9D0010B8CC /* AudioToolbox.framework */; };
 		7D9ADA1A244BECB40010B8CC /* UTDebugUISetupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ADA19244BECB40010B8CC /* UTDebugUISetupHelper.swift */; };
 		7D9ADA27244BF01F0010B8CC /* UTDebugTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */; };
+		7D9ADA30244BFB980010B8CC /* UTDebugTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ADA2F244BFB980010B8CC /* UTDebugTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,9 @@
 		7D9ADA14244BEACA0010B8CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7D9ADA17244BEB9D0010B8CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		7D9ADA19244BECB40010B8CC /* UTDebugUISetupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTDebugUISetupHelper.swift; sourceTree = "<group>"; };
-		7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = UTDebugTools.podspec; sourceTree = SOURCE_ROOT; };
+		7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = UTDebugTools.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D9ADA2E244BF7890010B8CC /* UTDebugTools.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = UTDebugTools.modulemap; sourceTree = "<group>"; };
+		7D9ADA2F244BFB980010B8CC /* UTDebugTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTDebugTools.swift; sourceTree = "<group>"; };
 		ACDF351F9846E2106E231304 /* Pods_UTDebugTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTDebugTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C140CAB2FEF1DD1EBDB91340 /* Pods-UTDebugTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTDebugTools.debug.xcconfig"; path = "Target Support Files/Pods-UTDebugTools/Pods-UTDebugTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,11 +69,13 @@
 		7D9ADA05244BE8440010B8CC /* UTDebugTools */ = {
 			isa = PBXGroup;
 			children = (
+				7D9ADA0F244BEA360010B8CC /* src */,
 				7D9ADA26244BF01F0010B8CC /* UTDebugTools.podspec */,
 				7D9ADA14244BEACA0010B8CC /* Podfile */,
-				7D9ADA0F244BEA360010B8CC /* src */,
 				7D9ADA06244BE8440010B8CC /* UTDebugTools.h */,
 				7D9ADA07244BE8440010B8CC /* Info.plist */,
+				7D9ADA2E244BF7890010B8CC /* UTDebugTools.modulemap */,
+				7D9ADA2F244BFB980010B8CC /* UTDebugTools.swift */,
 			);
 			path = UTDebugTools;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			files = (
 				7D9ADA13244BEAAD0010B8CC /* UTDebugeTools.swift in Sources */,
 				7D9ADA1A244BECB40010B8CC /* UTDebugUISetupHelper.swift in Sources */,
+				7D9ADA30244BFB980010B8CC /* UTDebugTools.swift in Sources */,
 				7D9ADA11244BEA5F0010B8CC /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +365,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = UTDebugTools/UTDebugTools.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.utai.UTDebugTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,6 +395,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = UTDebugTools/UTDebugTools.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.utai.UTDebugTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
