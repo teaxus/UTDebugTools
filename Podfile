@@ -5,5 +5,5 @@ use_frameworks!
 target "UTDebugTools" do
 pod 'KVNProgress'
 pod 'SSZipArchive'
-pod "UTAppEngine", :path => "../UTAppEngine"
+pod "UTAppEngine", :path => "../UTAppEninge"
 end
